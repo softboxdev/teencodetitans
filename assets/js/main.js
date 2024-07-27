@@ -18,29 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const loadLanguage = (lang) => {
-    console.log(`Loading language: ${lang}`);
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', `assets/lang/${lang}.json`, true);
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          const data = JSON.parse(xhr.responseText);
-          console.log(`Language data:`, data);
-          document.querySelectorAll('[data-translate]').forEach(el => {
-            const key = el.getAttribute('data-translate');
-            if (data[key]) {
-              el.innerText = data[key];
-            } else {
-              console.warn(`No translation found for key: ${key}`);
-            }
-          });
-        } else {
-          console.error(`Failed to load ${lang}.json: ${xhr.statusText}`);
-        }
+  console.log(`Loading language: ${lang}`);
+  fetch(`assets/lang/${lang}.json`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${lang}.json`);
       }
-    };
-    xhr.send();
-  };
+      return response.json();
+    })
+    .then(data => {
+      console.log(`Language data:`, data);
+      document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.getAttribute('data-translate');
+        if (data[key]) {
+          el.innerText = data[key];
+        } else {
+          console.warn(`No translation found for key: ${key}`);
+        }
+      });
+    })
+    .catch(error => console.error('Error loading language:', error));
+};
 
   const setActiveLanguage = (lang) => {
     langElements.forEach(el => {
