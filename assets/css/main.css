@@ -3281,3 +3281,8 @@ section {
   background: var(--color-primary);
   text-decoration: none;
 }
+
+.active-lang {
+  font-weight: bold;
+  color: #007bff; /* Цвет выделенного языка */
+}

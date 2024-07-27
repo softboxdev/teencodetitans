@@ -4,8 +4,60 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
+    const langElements = document.querySelectorAll('.lang');
+  langElements.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = e.target.getAttribute('data-lang');
+      setActiveLanguage(lang);
+      loadLanguage(lang);
+    });
+  });
+
+  const loadLanguage = (lang) => {
+    console.log(`Loading language: ${lang}`);
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', `assets/lang/${lang}.json`, true);
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          console.log(`Language data:`, data);
+          document.querySelectorAll('[data-translate]').forEach(el => {
+            const key = el.getAttribute('data-translate');
+            if (data[key]) {
+              el.innerText = data[key];
+            } else {
+              console.warn(`No translation found for key: ${key}`);
+            }
+          });
+        } else {
+          console.error(`Failed to load ${lang}.json: ${xhr.statusText}`);
+        }
+      }
+    };
+    xhr.send();
+  };
+
+  const setActiveLanguage = (lang) => {
+    langElements.forEach(el => {
+      if (el.getAttribute('data-lang') === lang) {
+        el.classList.add('active-lang');
+      } else {
+        el.classList.remove('active-lang');
+      }
+    });
+    localStorage.setItem('selectedLanguage', lang);
+  };
+
+  // Load default language or saved language
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr';
+  setActiveLanguage(savedLanguage);
+  loadLanguage(savedLanguage);
+
 
   /**
    * Preloader
