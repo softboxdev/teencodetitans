@@ -94,7 +94,8 @@
       "list": [
         "Weekday and weekend groups",
         "Beginner, intermediate, and advanced courses"
-      ],
+      ]
+    },
   "service-item-2": "col-xl-3 col-md-6 d-flex",
   "bi-bounding-box-circles": "bi bi-bounding-box-circles icon",
   "service-title-2": "Olympiad Preparation",
@@ -102,7 +103,8 @@
       "list": [
         "Special courses and practice exercises",
         "Intensive courses during summer and winter periods"
-      ],
+      ]
+    },
   "service-item-3": "col-xl-3 col-md-6 d-flex",
   "bi-calendar4-week": "bi bi-calendar4-week icon",
   "service-title-3": "Regular Reports and Consultations",
@@ -110,7 +112,8 @@
       "list": [
         "Regular progress reports and meetings with parents",
         "Career path and professional orientation consultations"
-      ],
+      ]
+    },
   "service-item-4": "col-xl-3 col-md-6 d-flex",
   "bi-broadcast": "bi bi-broadcast icon",
   "service-title-4": "Developer League Community",
@@ -118,7 +121,8 @@
       "list": [
         "Participation in the community to build valuable connections",
         "Support and communication with like-minded individuals and professionals"
-      ],
+      ]
+    },
   "about": "about",
   "about-container": "container",
   "about-header": "section-header",
