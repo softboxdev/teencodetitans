@@ -3372,6 +3372,8 @@ section {
 .btn-download-schedule:hover {
   background-color: rgba(var(--color-primary-rgb), 0.85);
 }
+
+/* Additional styles for Event Schedule Section tabs */
 .event-schedule .nav-pills .nav-link {
   background: none;
   font-size: 18px;
@@ -3387,4 +3389,41 @@ section {
   color: var(--color-primary);
   background: none;
   border-bottom: 3px solid var(--color-primary);
+}
+
+.event-schedule .nav-item + .nav-item {
+  margin-left: 20px; /* Adjust this value to increase or decrease the space between the tabs */
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-read-more {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-read-more:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.btn-download-schedule {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn-download-schedule:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.85);
 }
