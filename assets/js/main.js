@@ -30,11 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(`Language data:`, data);
       document.querySelectorAll('[data-translate]').forEach(el => {
         const key = el.getAttribute('data-translate');
-        if (data[key]) {
-          el.innerText = data[key];
-        } else {
-          console.warn(`No translation found for key: ${key}`);
-        }
+        const value = data[key];
+          if (value) {
+            if (Array.isArray(value.list)) {
+              el.innerHTML = value.list.map(item => `<li>${item}</li>`).join('');
+            } else {
+              el.innerText = value;
+            }
+          } else {
+            console.warn(`No translation found for key: ${key}`);
+          }
       });
     })
     .catch(error => console.error('Error loading language:', error));
