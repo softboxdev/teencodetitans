@@ -17,6 +17,7 @@
   "link-swiper-css": "assets/vendor/swiper/swiper-bundle.min.css",
   "link-variables-css": "assets/css/variables.css",
   "link-main-css": "assets/css/main.css",
+  "learnMore": "Registration",
   "body": "body",
   "header": "header",
   "header-container": "container-fluid d-flex align-items-center justify-content-between",
@@ -144,7 +145,7 @@
   "tab-3-link": " ",
   "about-tab-content": "tab-content",
   "tab-1-content": "tab-pane fade show active",
-  "tab-1-content-text": "Schedule: Weekdays: Tuesday and Thursday, 16:00 - 17:30, 17:30 - 19:00",
+  "tab-1-content-text": "Each group consists of a maximum of 7 students, ensuring personalized attention and a supportive learning environment. Our small group sizes allow for tailored instruction and close interaction between students and instructors. ",
   "tab-1-feature-1": "d-flex align-items-center mt-4",
   "tab-1-feature-1-icon": "bi bi-check2",
   "tab-1-feature-1-title": "Preparation",
@@ -662,5 +663,8 @@
   "scroll-top-icon": "scroll top icon",
   "preloader": "preloader",
   "isotope-js": "isotope",
-  "php-email-form-js": "php-email-form"
+  "php-email-form-js": "php-email-form",
+  "timetable-title": "Timetable",
+  "timetable-description": "Stay updated with our latest events and activities",
+  "pay-now": "Pay now"
 }

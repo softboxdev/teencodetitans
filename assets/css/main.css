@@ -3374,6 +3374,15 @@ section {
 }
 
 /* Additional styles for Event Schedule Section tabs */
+.custom-tabs .nav-link {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.custom-tabs .nav-link.active {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+}
 .event-schedule .nav-pills .nav-link {
   background: none;
   font-size: 18px;
@@ -3406,6 +3415,7 @@ section {
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
+
 }
 
 .btn-read-more:hover {

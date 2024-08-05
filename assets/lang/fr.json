@@ -17,6 +17,7 @@
   "link-swiper-css": "assets/vendor/swiper/swiper-bundle.min.css",
   "link-variables-css": "assets/css/variables.css",
   "link-main-css": "assets/css/main.css",
+  "learnMore": "L'inscription",
   "body": "corps",
   "header": "en-tête",
   "header-container": "container-fluid d-flex align-items-center justify-content-between",
@@ -144,7 +145,7 @@
   "tab-3-link": " ",
   "about-tab-content": "tab-content",
   "tab-1-content": "tab-pane fade show active",
-  "tab-1-content-text": "Horaire: Jours de semaine : Mardi et Jeudi, 16:00 - 17:30, 17:30 - 19:00",
+  "tab-1-content-text": "Chaque groupe est composé d'un maximum de 7 étudiants, ce qui garantit une attention personnalisée et un environnement d'apprentissage favorable. La taille réduite des groupes permet un enseignement sur mesure et une interaction étroite entre les étudiants et les instructeurs.",
   "tab-1-feature-1": "d-flex align-items-center mt-4",
   "tab-1-feature-1-icon": "bi bi-check2",
   "tab-1-feature-1-title": "Préparation",
@@ -158,7 +159,7 @@
   "tab-1-feature-3-title": "Résultats",
   "tab-1-feature-3-description": "À la fin du cours, les étudiants seront capables de développer des applications simples, de résoudre des problèmes algorithmiques de base et de comprendre les concepts fondamentaux de la programmation. Ils seront également prêts à aborder des sujets plus avancés à l'avenir.",
   "tab-2-content": "tab-pane fade show",
-  "tab-2-content-text": "Horaire: Jours de semaine : Mardi et Jeudi, 19:00 - 20:30",
+  "tab-2-content-text": "Chaque groupe est composé d'un maximum de 7 étudiants, ce qui garantit une attention personnalisée et un environnement d'apprentissage favorable. La taille réduite des groupes permet un enseignement sur mesure et une interaction étroite entre les étudiants et les instructeurs.",
   "tab-2-feature-1": "d-flex align-items-center mt-4",
   "tab-2-feature-1-icon": "bi bi-check2",
   "tab-2-feature-1-title": "Préparation",
@@ -662,5 +663,8 @@
   "scroll-top-icon": "icône haut de page",
   "preloader": "préchargeur",
   "isotope-js": "isotope",
-  "php-email-form-js": "formulaire-email-php"
+  "php-email-form-js": "formulaire-email-php",
+  "timetable-title": "Horaires",
+  "timetable-description": "Restez au courant de nos derniers événements et activités",
+  "pay-now": "payer maintenant"
 }
