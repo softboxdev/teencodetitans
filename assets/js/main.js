@@ -7,7 +7,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
-    const langElements = document.querySelectorAll('.lang');
+  const langElements = document.querySelectorAll('.lang');
   langElements.forEach(el => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const loadLanguage = (lang) => {
-  console.log(`Loading language: ${lang}`);
-  fetch(`assets/lang/${lang}.json`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Failed to load ${lang}.json`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log(`Language data:`, data);
-      document.querySelectorAll('[data-translate]').forEach(el => {
-        const key = el.getAttribute('data-translate');
-        const value = data[key];
+    console.log(`Loading language: ${lang}`);
+    fetch(`assets/lang/${lang}.json`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed to load ${lang}.json`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(`Language data:`, data);
+        document.querySelectorAll('[data-translate]').forEach(el => {
+          const key = el.getAttribute('data-translate');
+          const value = data[key];
           if (value) {
             if (Array.isArray(value.list)) {
               el.innerHTML = value.list.map(item => `<li>${item}</li>`).join('');
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             console.warn(`No translation found for key: ${key}`);
           }
-      });
-    })
-    .catch(error => console.error('Error loading language:', error));
-};
+        });
+      })
+      .catch(error => console.error('Error loading language:', error));
+  };
 
   const setActiveLanguage = (lang) => {
     langElements.forEach(el => {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Fires the scrollto function on click to links .scrollto
    */
   let selectScrollto = document.querySelectorAll('.scrollto');
-  selectScrollto.forEach(el => el.addEventListener('click', function(event) {
+  selectScrollto.forEach(el => el.addEventListener('click', function (event) {
     if (document.querySelector(this.hash)) {
       event.preventDefault();
 
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const mobileNavToogle = document.querySelector('.mobile-nav-toggle');
   if (mobileNavToogle) {
-    mobileNavToogle.addEventListener('click', function(event) {
+    mobileNavToogle.addEventListener('click', function (event) {
       event.preventDefault();
 
       document.querySelector('body').classList.toggle('mobile-nav-active');
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -250,8 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
+      menuFilters.forEach(function (el) {
+        el.addEventListener('click', function () {
           document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           portfolioIsotope.arrange({
@@ -264,6 +264,55 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
     });
+    $(document).ready(function () {
+      // Load translations
+      $.getJSON('path/to/translations.json', function (translations) {
+        var lang = 'en'; // Change this to switch languages
+        applyTranslations(translations[lang]);
+
+        // Parse the CSV file
+        Papa.parse('path/to/schedule.csv', {
+          download: true,
+          header: true,
+          complete: function (results) {
+            var data = results.data;
+            // Populate the tables
+            populateSchedule(data, 'Group 1', '#group1-schedule');
+            populateSchedule(data, 'Group 2', '#group2-schedule');
+          }
+        });
+      });
+
+      function applyTranslations(translations) {
+        $('[data-translate]').each(function () {
+          var key = $(this).data('translate');
+          if (translations[key]) {
+            $(this).text(translations[key]);
+          }
+        });
+      }
+
+      function populateSchedule(data, group, tableId) {
+        var rows = '';
+        data.forEach(function (row) {
+          if (row.Group === group) {
+            rows += '<tr>' +
+              '<td>' + row.Date + '</td>' +
+              '<td>' + row.Session + '</td>' +
+              '<td>' + row.Venue + '</td>' +
+              '<td class="text-end"><button class="btn-read-more" data-translate="pay-now">Pay Now</button></td>' +
+              '</tr>';
+          }
+        });
+        $(tableId).html(rows);
+        // Reapply translations to newly added elements
+        $.getJSON('path/to/translations.json', function (translations) {
+          var lang = 'en'; // Change this to switch languages
+          applyTranslations(translations[lang]);
+        });
+      }
+    });
+    
 
   }
 

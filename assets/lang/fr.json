@@ -666,5 +666,9 @@
   "php-email-form-js": "formulaire-email-php",
   "timetable-title": "Horaires",
   "timetable-description": "Restez au courant de nos derniers événements et activités",
-  "pay-now": "payer maintenant"
+  "pay-now": "Payer maintenant",
+  "date": "La date",
+  "session": "Session",
+  "venue": "Lieu",
+  "start-date-1": "16 novembre"
 }

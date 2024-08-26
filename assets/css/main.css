@@ -3383,6 +3383,9 @@ section {
   color: var(--color-primary);
   border-bottom: 3px solid var(--color-primary);
 }
+.table td.text-end {
+  text-align: right;
+}
 .event-schedule .nav-pills .nav-link {
   background: none;
   font-size: 18px;
@@ -3393,6 +3396,7 @@ section {
   border-radius: 0;
   font-family: var(--font-secondary);
 }
+
 
 .event-schedule .nav-pills .nav-link.active {
   color: var(--color-primary);
@@ -3407,6 +3411,7 @@ section {
 .table th, .table td {
   vertical-align: middle;
 }
+
 
 .btn-read-more {
   background-color: var(--color-primary);

@@ -1,0 +1,24 @@
+{
+    "en": {
+        "tab-1-link": "Group (Ages 12-14)",
+        "tab-2-link": "Group (Ages 15-17)",
+        "date": "Date",
+        "session": "Session",
+        "venue": "Venue",
+        "pay-now": "Pay Now",
+        "download-schedule": "Download Schedule",
+        "timetable-header": "Timetable",
+        "timetable-description": "Stay updated with our latest events and activities."
+    },
+    "fr": {
+        "tab-1-link": "Groupe (12-14 ans)",
+        "tab-2-link": "Groupe (15-17 ans)",
+        "date": "Date",
+        "session": "Session",
+        "venue": "Lieu",
+        "pay-now": "Payer Maintenant",
+        "download-schedule": "Télécharger le Programme",
+        "timetable-header": "Emploi du Temps",
+        "timetable-description": "Restez informé de nos derniers événements et activités."
+    }
+}

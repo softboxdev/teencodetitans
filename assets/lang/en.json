@@ -666,5 +666,11 @@
   "php-email-form-js": "php-email-form",
   "timetable-title": "Timetable",
   "timetable-description": "Stay updated with our latest events and activities",
-  "pay-now": "Pay now"
+  "pay-now": "Pay now",
+  "date": "Date",
+  "session": "Session",
+  "venue": "Venue",
+  "start-date-1": "16 November",
+  "start-date-2": "26 November",
+  "start-date-3": "16 November"
 }
