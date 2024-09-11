@@ -38,7 +38,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<!-- =======================================================
+  <!-- =======================================================
 parsing
   ======================================================== -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -71,8 +71,8 @@ parsing
           <li class="dropdown"><a href="#"><span data-translate="home">Home</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="index.html" class="active" data-translate="registration">Registration</a></li>
-              <li><a href="index-2.html" data-translate="programs">Programs</a></li>
+              <li><a href="#registration" class="active" data-translate="registration">Registration</a></li>
+              <li><a href="#services" data-translate="programs">Programs</a></li>
               <li><a href="index-4.html" data-translate="developersLeague">Developer's League</a></li>
               <li><a href="index-4.html" data-translate="timetable">Timetable</a></li>
               <li><a href="index-4.html" data-translate="contact">Contact</a></li>
@@ -81,13 +81,13 @@ parsing
           <!-- =======================================================
     переписать под нужные разделы
   ======================================================== -->
-          <li><a class="nav-link scrollto" href="index.html#registration" data-translate="registration">Registration</a>
+          <li><a class="nav-link scrollto" href="#registration" data-translate="registration">Registration</a>
           </li>
-          <li><a class="nav-link scrollto" href="index.html#programs" data-translate="programs">Programs</a></li>
-          
+          <li><a class="nav-link scrollto" href="#services" data-translate="programs">Programs</a></li>
+
           <li><a class="nav-link scrollto" href="index.html#developersLeague"
               data-translate="developersLeague">Developer's League</a></li>
-          
+
           <li class="dropdown">
             <a href="#"><span data-translate="timetable">Timetable</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -101,7 +101,7 @@ parsing
             </ul>
           </li>
 
-         
+
           <li><a class="nav-link scrollto" href="index.html#contact" data-translate="contact">Contact</a></li>
           <li class="dropdown">
             <a href="#"><span data-translate="language">Language</span> <i
@@ -147,73 +147,131 @@ parsing
 
 
 
+
+
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="index.html#programs" class="stretched-link" data-translate="service-title-1">Online Group
-                  Classes</a></h4>
-              <ul data-translate="service-description-1">
-                <li>Weekday and weekend groups</li>
-                <li>Beginner, intermediate, and advanced courses</li>
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="index.html#programs" class="stretched-link" data-translate="service-title-2">Olympiad
-                  Preparation</a></h4>
-
-              <ul data-translate="service-description-2">
-                <li>Special courses and practice exercises</li>
-                <li>Intensive courses during summer and winter periods</li>
-
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="index.html#programs" class="stretched-link" data-translate="service-title-3">Regular Reports
-                  and Consultations</a></h4>
-              <ul data-translate="service-description-3">
-                <li>Regular progress reports and meetings with parents</li>
-                <li>Career path and professional orientation consultations</li>
-
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="index.html#programs" class="stretched-link" data-translate="service-title-4">Developer League
-                  Community</a></h4>
-              <ul data-translate="service-description-4">
-                <li>Participation in the community to build valuable connections</li>
-                <li>Support and communication with like-minded individuals and professionals</li>
-
-              </ul>
-            </div>
-          </div><!-- End Service Item -->
-
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-header">
+          <h2 data-translate="Our Services">Our Services</h2>
+          <p data-translate="Service description">Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
         </div>
-
+    
+        <div class="row gy-5">
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 1 Name">Nesciunt Mete</h3>
+                </a>
+                <p data-translate="Service 1 Description">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 2 Name">Eosle Commodi</h3>
+                </a>
+                <p data-translate="Service 2 Description">Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 3 Name">Ledo Markt</h3>
+                </a>
+                <p data-translate="Service 3 Description">Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 4 Name">Asperiores Commodit</h3>
+                </a>
+                <p data-translate="Service 4 Description">Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 5 Name">Velit Doloremque</h3>
+                </a>
+                <p data-translate="Service 5 Description">Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 6 Name">Dolori Architecto</h3>
+                </a>
+                <p data-translate="Service 6 Description">Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+    
       </div>
-    </section><!-- End Featured Services Section -->
-
+    </section>
+    <!-- End Featured Services Section -->
+    
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="registration" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -234,7 +292,7 @@ parsing
           </div>
 
           <div class="col-lg-7">
-            
+
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
@@ -327,6 +385,28 @@ parsing
 
       </div>
     </section><!-- End About Section -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+    
+        <div class="row g-5">
+    
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3 data-translate="CTA Title">Alias sunt quas <em>Cupiditate</em> oluptas hic minima</h3>
+            <p data-translate="CTA Description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="cta-btn align-self-start" href="#registration" data-translate="CTA Button">Call To Action</a>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/cta.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section><!-- End Call To Action Section -->
+    
 
 
 
@@ -371,7 +451,7 @@ parsing
 
               <div class="pricing-header">
                 <h3 data-translate="pricing-title-2"> </h3>
-                <h4><sup>EUR </sup>200<span data-translate="pricing-duration-2">  </span></h4>
+                <h4><sup>EUR </sup>200<span data-translate="pricing-duration-2"> </span></h4>
               </div>
 
               <ul>
@@ -606,7 +686,10 @@ parsing
       </div>
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4912.362156359126!2d0.8093489967272565!3d52.00357823772114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d900622ae1ce49%3A0x9e6a05984194acdc!2sAssington%2C%20Sudbury%20CO10%205LW%2C%20UK!5e0!3m2!1sen!2sru!4v1725372368728!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4912.362156359126!2d0.8093489967272565!3d52.00357823772114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d900622ae1ce49%3A0x9e6a05984194acdc!2sAssington%2C%20Sudbury%20CO10%205LW%2C%20UK!5e0!3m2!1sen!2sru!4v1725372368728!5m2!1sen!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!-- End Google Maps -->
 
       <div class="container">
@@ -636,7 +719,7 @@ parsing
                 </div>
               </div><!-- End Info Item -->
 
-              
+
 
             </div>
 
@@ -689,13 +772,13 @@ parsing
               <p>
                 <span data-translate="footer-info-address">England, Society Barn <br>
                   Assington Sudbury CO10 5LW<br><br>
-                
+
                   <strong>Email:</strong> soft.box.development@gmail.com<br></span>
               </p>
             </div>
           </div>
 
-          
+
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4 data-translate="footer-newsletter-title">Our Newsletter</h4>
@@ -729,7 +812,7 @@ parsing
           </div>
         </div>
 
-        
+
 
       </div>
     </div>

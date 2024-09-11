@@ -670,5 +670,22 @@
   "date": "La date",
   "session": "Session",
   "venue": "Lieu",
-  "start-date-1": "16 novembre"
+  "start-date-1": "16 novembre",
+  "Our Services": "Nos Services",
+  "Service description": "Nous proposons des cours de programmation spécialisés pour préparer les enfants aux défis du codage compétitif et de l’olympiade dans deux groupes d'âge : 12-14 ans et 15-17 ans.",
+  "Service 1 Name": "Programmation Compétitive Débutant (12-14 ans)",
+  "Service 1 Description": "Ce cours présente les bases de la programmation compétitive, en mettant l'accent sur les algorithmes, les structures de données et les techniques de résolution de problèmes pour les jeunes élèves.",
+  "Service 2 Name": "Programmation Compétitive Intermédiaire (15-17 ans)",
+  "Service 2 Description": "Conçu pour les adolescents, ce cours approfondit les algorithmes avancés, les problèmes d'optimisation et prépare les élèves aux compétitions nationales et internationales de programmation.",
+  "Service 3 Name": "Préparation à l'Olympiade de Programmation (12-14 ans)",
+  "Service 3 Description": "Un cours spécialisé qui entraîne les jeunes esprits pour les défis de programmation de l’olympiade scolaire. Les élèves abordent des problèmes algorithmiques adaptés à leur groupe d'âge.",
+  "Service 4 Name": "Olympiade de Programmation Avancée (15-17 ans)",
+  "Service 4 Description": "Ce programme s'adresse aux étudiants avancés, affinant leurs compétences pour concourir dans des olympiades de programmation de haut niveau avec un focus approfondi sur les stratégies de résolution de problèmes.",
+  "Service 5 Name": "Sessions de Codage en Groupe (12-14 ans)",
+  "Service 5 Description": "Des sessions de groupe interactives conçues pour favoriser la collaboration et le travail d'équipe parmi les jeunes apprenants, les aidant à résoudre ensemble des défis de codage.",
+  "Service 6 Name": "Sessions de Codage en Groupe (15-17 ans)",
+  "Service 6 Description": "Sessions de résolution de problèmes en équipe pour les étudiants plus âgés, visant à renforcer leur capacité à collaborer et à concourir dans des compétitions de codage en groupe.",
+  "CTA Title": "Rejoignez la Ligue des Développeurs",
+  "CTA Description": "Faites partie de la Ligue des Développeurs et améliorez vos compétences en programmation. Participez à des défis de codage et des olympiades avec des pairs partageant les mêmes intérêts, et développez-vous en tant que développeur.",
+  "CTA Button": "Rejoindre Maintenant"
 }

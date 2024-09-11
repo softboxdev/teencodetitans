@@ -672,5 +672,22 @@
   "venue": "Venue",
   "start-date-1": "16 November",
   "start-date-2": "26 November",
-  "start-date-3": "16 November"
+  "start-date-3": "16 November",
+  "Our Services": "Our Services",
+  "Service description": "We offer specialized programming courses aimed at preparing children for competitive programming and olympiad-level challenges in two age groups: 12-14 and 15-17.",
+  "Service 1 Name": "Beginner Competitive Programming (Ages 12-14)",
+  "Service 1 Description": "This course introduces the fundamentals of competitive programming, focusing on algorithms, data structures, and problem-solving techniques for younger students.",
+  "Service 2 Name": "Intermediate Competitive Programming (Ages 15-17)",
+  "Service 2 Description": "Designed for teenagers, this course dives deeper into advanced algorithms, optimization problems, and prepares students for national and international programming competitions.",
+  "Service 3 Name": "Olympiad Programming Prep (Ages 12-14)",
+  "Service 3 Description": "A specialized course focused on training young minds for school-level olympiad programming challenges. Students will tackle algorithmic problems suited to their age group.",
+  "Service 4 Name": "Olympiad Programming Advanced (Ages 15-17)",
+  "Service 4 Description": "This program is geared towards advanced students, honing their skills to compete in high-level programming olympiads with in-depth focus on problem-solving strategies.",
+  "Service 5 Name": "Group Coding Sessions (Ages 12-14)",
+  "Service 5 Description": "Interactive group sessions designed to foster collaboration and teamwork among young learners, helping them solve coding challenges together.",
+  "Service 6 Name": "Group Coding Sessions (Ages 15-17)",
+  "Service 6 Description": "Team-based problem-solving sessions for older students, aimed at enhancing their ability to collaborate and compete in group coding competitions.",
+  "CTA Title": "Join the Developer League",
+  "CTA Description": "Become a part of the Developer League and take your programming skills to the next level. Compete in coding challenges and olympiads with like-minded peers, and grow as a developer.",
+  "CTA Button": "Join Now"
 }
