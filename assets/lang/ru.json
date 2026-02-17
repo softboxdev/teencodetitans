@@ -673,9 +673,9 @@
   "Service 1 Name": "Базовый тариф",
   "Service 1 Description": " ",
   "Service 2 Name": "Расширенный",
-  "Service 2 Description": "Designed for teenagers, this course dives deeper into advanced algorithms, optimization problems, and prepares students for national and international programming competitions.",
+  "Service 2 Description": "Тариф с углубленным изучением и подробными индивидуальными заданиями под потребности обучающегося.",
   "Service 3 Name": "Пакет с выездными мероприятиями",
-  "Service 3 Description": "A specialized course focused on training young minds for school-level olympiad programming challenges. Students will tackle algorithmic problems suited to their age group.",
+  "Service 3 Description": "Выездные мероприятия по возрастным ограничениям. Участие в профильных олимпиадах, хакатонах, конференциях.",
   "CTA Title": "Стань частью Лиги разработчиков",
   "CTA Description": "Стань частью сообщества математиков, программистов, разрабочиков программного обеспечения.",
   "CTA Button": "Присоединиться сейчас"
