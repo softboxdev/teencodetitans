@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Load default language or saved language
-  const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr';
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
   setActiveLanguage(savedLanguage);
   loadLanguage(savedLanguage);
 
@@ -266,8 +266,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     $(document).ready(function () {
       // Load translations
-      $.getJSON('path/to/translations.json', function (translations) {
-        var lang = 'en'; // Change this to switch languages
+      $.getJSON('./assets/lang/ru.json', function (translations) {
+        var lang = 'ru'; // Change this to switch languages
         applyTranslations(translations[lang]);
 
         // Parse the CSV file
@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         $(tableId).html(rows);
         // Reapply translations to newly added elements
-        $.getJSON('path/to/translations.json', function (translations) {
-          var lang = 'en'; // Change this to switch languages
+        $.getJSON('./assets/lang/ru.json', function (translations) {
+          var lang = 'ru'; // Change this to switch languages
           applyTranslations(translations[lang]);
         });
       }
