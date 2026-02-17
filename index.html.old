@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title data-translate="title">TeensCode-Titans</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- =======================================================
+parsing
+  ======================================================== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+
+  <!-- =======================================================
+  * Template Name: TeenCode-Titans - v2.3.0
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ACTIVE PAGE 
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 data-translate="siteTitle">Курсы по программированию<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li class="dropdown"><a href="#"><span data-translate="home">Главная</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#registration" class="active" data-translate="registration">Регистрация</a></li>
+              <li><a href="#services" data-translate="programs">Тарифы</a></li>
+              <li><a href="#cta" data-translate="developersLeague">Лига разработчиков</a></li>
+              
+              <li><a href="#contact" data-translate="contact">Контакты</a></li>
+            </ul>
+          </li>
+          <!-- =======================================================
+    переписать под нужные разделы
+  ======================================================== -->
+          <li><a class="nav-link scrollto" href="#registration" data-translate="registration">Регистрация</a>
+          </li>
+          <li><a class="nav-link scrollto" href="#services" data-translate="programs">Тарифы</a></li>
+
+          <li><a class="nav-link scrollto" href="index.html#cta" data-translate="developersLeague">Лига разработчиков</a></li>
+
+          <li><a class="nav-link scrollto" href="index.html#contact" data-translate="contact">Контакты</a></li>
+          <li class="dropdown">
+            <a href="#"><span data-translate="language">Язык</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <!--  
+              <li><a href="#" class="lang" data-lang="en" data-translate="lang-en">English</a></li>
+              <li><a href="#" class="lang" data-lang="fr" data-translate="lang-fr">Français</a></li>
+              -->
+              <li><a href="#" class="lang" data-lang="ru" data-translate="lang-ru">Русский</a></li>
+             
+
+              <!-- Add more languages here -->
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="#registration" data-translate="btn-getstarted"></a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+      data-aos="zoom-out">
+      <div class="video-container">
+        <video class="responsive-video" autoplay loop muted playsinline>
+          <source src="assets/video/Gen-2.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+      <h2 data-translate="welcome">Добро пожаловать<span>Курсы по программированию</span></h2>
+      <p data-translate="heroDescription"> </p>
+      <div class="d-flex">
+        <a href="#registration" class="btn-get-started scrollto" data-translate="getStarted"> </a>
+        <a href="assets/video/Gen-2.mp4" class="glightbox btn-watch-video d-flex align-items-center">
+          <i class="bi bi-play-circle"></i><span data-translate="watchVideo"> </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2 data-translate="Our Services"> </h2>
+          <p data-translate="Service description"> </p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 1 Name"> </h3>
+                </a>
+                <p data-translate="Service 1 Description"> .</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 2 Name"> </h3>
+                </a>
+                <p data-translate="Service 2 Description"> </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3 data-translate="Service 3 Name"> </h3>
+                </a>
+                <p data-translate="Service 3 Description"> </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="registration" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2 data-translate="registration"> </h2>
+          <p data-translate="about-us-description"> </p>
+        </div>
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1" data-translate="tab-1-link"> </a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2" data-translate="tab-2-link"></a></li>
+
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+                <p class="fst-italic" data-translate="tab-1-content-text"></p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-1-feature-1-title"></h4>
+                </div>
+                <p data-translate="tab-1-feature-1-description"> </p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-1-feature-2-title"> </h4>
+                </div>
+                <p data-translate="tab-1-feature-2-description"></p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-1-feature-3-title"></h4>
+                </div>
+                <p data-translate="tab-1-feature-3-description"> </p>
+
+                <div class="d-flex align-items-left mt-4">
+                  <i class="btn registration"></i>
+                  <a href="https://forms.gle/HypcDuFgKBaawU46A" class="btn-read-more"
+                    data-translate="learnMore"> </a>
+                </div>
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade" id="tab2">
+                <p class="fst-italic" data-translate="tab-2-content-text"> </p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-2-feature-1-title"> </h4>
+                </div>
+                <p data-translate="tab-2-feature-1-description"> </p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-2-feature-2-title"> </h4>
+                </div>
+                <p data-translate="tab-2-feature-2-description"> </p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4 data-translate="tab-2-feature-3-title"> </h4>
+                </div>
+                <p data-translate="tab-2-feature-3-description"> </p>
+
+                <div class="d-flex align-items-left mt-4">
+                  <i class="btn registration"></i>
+                  <a href="https://forms.gle/qJxx663bBoB6dwGt9" class="btn-read-more"
+                    data-translate="learnMore"> </a>
+                </div>
+
+              </div><!-- End Tab 2 Content -->
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3 data-translate="CTA Title"> <em> </em> </h3>
+            <p data-translate="CTA Description"> </p>
+            <a class="cta-btn align-self-start" href="#registration" data-translate="CTA Button"></a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/cta.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2 data-translate="pricing-title"> </h2>
+          <p data-translate="pricing-description"> </p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+
+              <div class="pricing-header">
+                <h3 data-translate="pricing-title-1"> </h3>
+                <h4><sup>руб </sup>7000<span data-translate="pricing-duration-1"> </span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-1-1"></span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-1-2"> </span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-1-3"> </span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-1-4"> </span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-1-5"> </span></li>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="https://forms.gle/sV6HTZcA3eUDHXQg7" class="buy-btn" data-translate="buy-btn"> </a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="pricing-item featured">
+
+              <div class="pricing-header">
+                <h3 data-translate="pricing-title-2"> </h3>
+                <h4><sup>руб </sup>12000<span data-translate="pricing-duration-2"> </span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-2-1"> </span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-2-2"> </span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-2-3"> </span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-2-4"> </span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-2-5"> </span></li>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="https://forms.gle/zJwBBFPNqru72qp2A" class="buy-btn" data-translate="buy-btn"> </a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="pricing-item featured">
+
+              <div class="pricing-header">
+                <h3 data-translate="pricing-title-3"> </h3>
+                <h4><sup>руб</sup>22000<span data-translate="pricing-duration-3"> </span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-3-1">Quam adipiscing vitae proin</span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-3-2">Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-3-3">Nulla at volutpat diam uteera</span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-3-4">Pharetra massa massa
+                    ultricies</span></li>
+                <li><i class="bi bi-dot"></i> <span data-translate="pricing-li-3-5">Massa ultricies mi quis
+                    hendrerit</span></li>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="https://forms.gle/ZNrgsAdUqhFBzr967" class="buy-btn" data-translate="buy-btn">Оплатить </a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 data-translate="contact-title">Связаться с нами</h2>
+          <p data-translate="contact-description">Контакты</p>
+        </div>
+
+      </div>
+
+      <div class="map">
+        <iframe
+          src=""
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+              <h3 data-translate="contact-info-title">Держите связь</h3>
+              <p data-translate="contact-info-description"></p>
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4 data-translate="geo-title">Расположение</h4>
+                  <p data-translate="geo-description">РФ, г. о. Клин</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4 data-translate="email-title">Email:</h4>
+                  <p data-translate="email-description">soft.box.development@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+
+
+            </div>
+
+          </div>
+<!--
+          
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading" data-translate="contact-loading">Loading</div>
+                <div class="error-message" data-translate="contact-error-message"></div>
+                <div class="sent-message" data-translate="contact-sent-message">Your message has been sent. Thank you!
+                </div>
+              </div>
+              <div class="text-center"><button type="submit" data-translate="contact-submit-btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+          -->
+          <div class="col-lg-8">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/alma-kond/30min" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+            
+
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3 data-translate="footer-info-title">Курсы по программированию</h3>
+              <p>
+                <span data-translate="footer-info-address">РФ, г.о. Клин <br>
+                  поселок Чайковского<br><br>
+
+                  <strong>Email:</strong> soft.box.development@gmail.com<br></span>
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4 data-translate="footer-newsletter-title">Наши новости</h4>
+            <p data-translate="footer-newsletter-description">Новости нашего портала</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span data-translate="footer-copyright-brand">ИП Кондыбаева Алмагуль Бауржановна
+              </span></strong>. All
+            Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/TeenCode-Titans-bootstrap-business-template/ -->
+            Designed by Almagul-Kondybayeva https://github.com/almakonde </a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
